@@ -3,6 +3,7 @@ module.exports = {
     './**/*.vue',
   ],
   theme: {
+    //add typography to sove DRY 
     typography: (theme) => ({
       default: {
         css: {
@@ -20,6 +21,7 @@ module.exports = {
         }
       }
     }),
+    //finish add typography 
     extend: {
       colors: {
         'meetup-blue': '#00455D',
@@ -95,6 +97,7 @@ module.exports = {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
+    //To solve CSS Reset
     require('@tailwindcss/typography'),
   ]
 }

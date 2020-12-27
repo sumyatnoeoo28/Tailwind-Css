@@ -45,6 +45,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    //After install,adding
     '@nuxtjs/markdownit',
   ],
   /*

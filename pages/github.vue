@@ -306,9 +306,7 @@
                 </div><!--end file-explorer-->
                 <div class="readme-container rounded-md border border-gray-400 px-4 py-4 mt-4">
                     <h4 class="font-semibold">README.md</h4>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non harum asperiores, sit tempora esse quia placeat accusantium praesentium illo exercitationem debitis? Sed tempora dicta culpa placeat praesentium ad asperiores?
-                    </div>
+                    <div v-html="readme" class="prose max-w-none px-4"></div>
                 </div> <!--end readme-container-->
             </div> <!--end file-explorer-container-->
             <div class="sidebar w-1/4">
@@ -463,3 +461,13 @@
         </footer>
     </div>
 </template>
+<script>
+    import readme from './readme-tailwind.md'
+    export default {
+        computed: {
+            readme() {
+            return readme
+            }
+        }
+    }
+</script>
